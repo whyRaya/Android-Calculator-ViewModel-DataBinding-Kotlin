@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="input_hint">Input your greatest formula here!</string>
+
+</resources>
