@@ -1,6 +1,5 @@
 package com.raya.studio.calculator
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
@@ -30,7 +29,7 @@ class MainViewModel: ViewModel() {
                 // sample "(2^3-1)*sin(pi/4)/ln(pi^2)"
                 val result = DoubleEvaluator().evaluate(it)
                 value = if (result % 1 == 0.0) result.toInt().toString() else result.toString()
-            } catch (e: Exception) { Log.e("Test222", e.toString()) }
+            } catch (e: Exception) { e.printStackTrace() }
         }
         value
     }
